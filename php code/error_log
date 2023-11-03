@@ -1,0 +1,140 @@
+[06-Oct-2023 19:30:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'xcispcjl_gaurav_saxena'@'95.111.248.160' to database 'mydatabase' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 06:27:50 UTC] PHP Warning:  Undefined array key "name" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 16
+[07-Oct-2023 06:27:50 UTC] PHP Warning:  Undefined array key "email" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 17
+[07-Oct-2023 06:27:50 UTC] PHP Warning:  Undefined array key "phone" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 18
+[07-Oct-2023 06:27:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'xcispcjl_gaurav_saxena.mytable' doesn't exist in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:23
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(23): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 23
+[07-Oct-2023 07:04:34 UTC] PHP Warning:  Undefined array key "name" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 16
+[07-Oct-2023 07:04:34 UTC] PHP Warning:  Undefined array key "email" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 17
+[07-Oct-2023 07:04:34 UTC] PHP Warning:  Undefined array key "phone" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 18
+[07-Oct-2023 07:04:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'xcispcjl_gaurav_saxena.mytable' doesn't exist in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:23
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(23): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 23
+[07-Oct-2023 07:43:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'gaurav_saxena'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 07:43:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'gaurav_saxena'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 07:43:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'gaurav_saxena'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 07:43:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'gaurav_saxena'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 07:43:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'gaurav_saxena'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 07:54:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'your_username'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 8
+[07-Oct-2023 08:42:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'your_username'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/delete.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/delete.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/delete.php on line 8
+[07-Oct-2023 08:42:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'your_username'@'localhost' (using password: YES) in /home/xcispcjl/public_html/pulsezest.com/customer/update.php:8
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/update.php(8): mysqli->__construct()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/update.php on line 8
+[07-Oct-2023 10:42:26 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[07-Oct-2023 10:42:26 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[07-Oct-2023 10:42:26 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[07-Oct-2023 10:42:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'patient_name' in 'field list' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[07-Oct-2023 10:43:21 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[07-Oct-2023 10:43:21 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[07-Oct-2023 10:43:21 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[07-Oct-2023 10:43:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column 'date' at row 1 in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[07-Oct-2023 10:43:47 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[07-Oct-2023 10:43:47 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[07-Oct-2023 10:43:47 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[07-Oct-2023 10:43:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column 'date' at row 1 in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[07-Oct-2023 10:46:10 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[07-Oct-2023 10:46:10 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[07-Oct-2023 10:46:10 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[07-Oct-2023 10:46:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column 'date' at row 1 in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[07-Oct-2023 10:49:00 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[07-Oct-2023 10:49:00 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[07-Oct-2023 10:49:00 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[07-Oct-2023 10:49:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column 'date' at row 1 in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[07-Oct-2023 10:50:11 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[07-Oct-2023 10:50:11 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[07-Oct-2023 10:50:11 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[08-Oct-2023 09:35:41 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[08-Oct-2023 09:35:41 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[08-Oct-2023 09:35:41 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[08-Oct-2023 12:02:23 UTC] PHP Warning:  Undefined array key "age" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 19
+[08-Oct-2023 12:02:23 UTC] PHP Warning:  Undefined array key "sex" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 20
+[08-Oct-2023 12:02:23 UTC] PHP Warning:  Undefined array key "date" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 21
+[01-Nov-2023 06:29:56 UTC] PHP Warning:  Undefined array key "address" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 18
+[01-Nov-2023 06:29:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'patient_email' in 'field list' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[01-Nov-2023 14:59:53 UTC] PHP Warning:  Undefined array key "address" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 18
+[01-Nov-2023 14:59:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'patient_email' in 'field list' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[01-Nov-2023 15:04:29 UTC] PHP Warning:  Undefined array key "address" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 18
+[01-Nov-2023 15:04:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'patient_email' in 'field list' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[01-Nov-2023 15:08:09 UTC] PHP Warning:  Undefined variable $patient_address in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 25
+[01-Nov-2023 15:08:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'patient_email' in 'field list' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[01-Nov-2023 15:11:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'patient_email' in 'field list' in /home/xcispcjl/public_html/pulsezest.com/customer/create.php:27
+Stack trace:
+#0 /home/xcispcjl/public_html/pulsezest.com/customer/create.php(27): mysqli->query()
+#1 {main}
+  thrown in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 27
+[01-Nov-2023 18:42:10 UTC] PHP Warning:  Undefined array key "email" in /home/xcispcjl/public_html/pulsezest.com/customer/create.php on line 17
