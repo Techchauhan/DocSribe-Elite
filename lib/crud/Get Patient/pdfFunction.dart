@@ -1,48 +1,105 @@
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 import 'package:flutter/services.dart'; // Import the services.dart package
 
-Future<void> _createPrescriptionPdf(String contentToPrint) async {
-  final pdf = pw.Document();
 
+void printPrescription(Map<String, dynamic> userData) async {
   // Load the image from assets using rootBundle
-  final ByteData data = await rootBundle.load('assets/doc.png');
-  final List<int> bytes = data.buffer.asUint8List();
+  final ByteData data = await rootBundle.load('assets/Final_Parcha.jpg');
+  final List<int> byte = data.buffer.asUint8List();
 
-  pdf.addPage(
-    pw.Page(
-      pageFormat: PdfPageFormat.a4,
-      build: (pw.Context context) {
-        return pw.Column(
-          crossAxisAlignment: pw.CrossAxisAlignment.start,
-          children: <pw.Widget>[
-            pw.Image(
-              pw.MemoryImage(Uint8List.fromList(bytes)),
-              width: 500,
-              height: 500,
-            ),
-            pw.Text(contentToPrint, style: pw.TextStyle(fontWeight: pw.FontWeight.bold))
-          ],
-        );
-      },
-    ),
-  );
+  String prescriptionContent2 = """
+  \n
+  \n
+  \n
+  \n
+  \n
+  \n
+  \n
+  \n
+                               Date: ${userData['date']} \n
+                               Number: ${userData['phone']} \n
+                               Age: ${userData['age']} """;
+   String prescriptionContent1 = """
+  \n
+  \n
+  \n
+  \n
+  \n
+  \n
+  \n
+  \n
+      OPD/UHI D - YDC${userData['opd']} \n                                                                              
+      Name: ${userData['patient_name']}  \n                                                                      
+      Sex: ${userData['sex']} 
+ """;
 
-  // Print the PDF
+    final pdf = pw.Document();
+
   await Printing.layoutPdf(
-    onLayout: (PdfPageFormat format) async {
+    onLayout: (PdfPageFormat format) {
+      pdf.addPage(
+        pw.Page(
+          pageFormat: PdfPageFormat.a4.copyWith(marginLeft: 0, marginRight: 0, marginTop: 0, marginBottom: 0), // Remove margins
+          build: (pw.Context context) {
+            // Calculate the image width and height to fit within the page
+            final double imageWidth = format.availableWidth;
+            final double imageHeight = format.availableHeight;
+
+            // Create a positioned widget for the image
+            final pw.Positioned imagePositioned = pw.Positioned(
+              left: 0,
+              top: 0,
+              child: pw.Image(
+                pw.MemoryImage(Uint8List.fromList(byte)),
+                width: imageWidth,
+                height: imageHeight,
+              ),
+            );
+
+
+            // Create a positioned widget for the text
+            final pw.Positioned textPositioned = pw.Positioned(
+              left: 0, // Set your desired left position
+              top: 0, // Set your desired top position
+              child: pw.Column(
+                children: [
+                  pw.SizedBox(height: 10),
+                  pw.Row(
+                      children: [
+                        pw.Text(prescriptionContent1, style: pw.TextStyle(fontWeight: pw.FontWeight.bold)),
+                        pw.Text(prescriptionContent2, style: pw.TextStyle(fontWeight: pw.FontWeight.bold)),
+                      ]
+                  )
+                ]
+              )
+            );
+
+            // Create a stack to overlay the image and text
+            final pw.Stack stack = pw.Stack(
+              children: <pw.Widget>[imagePositioned, textPositioned],
+            );
+
+            return stack;
+          },
+        ),
+      );
       return pdf.save();
     },
   );
+
+
+
 }
 
-void printPrescription(Map<String, dynamic> userData) {
-  String prescriptionContent = """
-      Patient Name: ${userData['patient_name']}         Age: ${userData['age']}        Sex: ${userData['sex']}        Date: ${userData['date']}""";
 
-  _createPrescriptionPdf(prescriptionContent);
-}
+
+//--> old prescription Paper
+// void printPrescription(Map<String, dynamic> userData) {
+//   String prescriptionContent = """
+//       Patient Name: ${userData['patient_name']}         Age: ${userData['age']}        Sex: ${userData['sex']}        Date: ${userData['date']}""";
+//
+//   _createPrescriptionPdf(prescriptionContent);
+// }
