@@ -25,7 +25,7 @@ class _GetPatientState extends State<GetPatient> {
 
   Future<void> fetchData() async {
     final response =
-    await http.get(Uri.parse('http://pulsezest.com/customer/read.php'));
+    await http.get(Uri.parse('http://project.pulsezest.com/docscribe/read.php'));
 
     if (response.statusCode == 200) {
       final List<dynamic> responseData = json.decode(response.body);
